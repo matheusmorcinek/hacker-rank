@@ -1,19 +1,30 @@
 
-
 function rotLeft(array, rotationNumber) {
 
-    if (rotationNumber >= 1) {
+    while (rotationNumber) {
         
-        let firstValue = array[0];
-        
-        array = array.splice(1,array.length - 1);
-        array = [...array, firstValue];
-        
-       return rotLeft(array, rotationNumber - 1);
+        array.push(array.shift());
+
+        rotationNumber--;
     }
-    
-    return array
+
+    return array;
 }
+
+// function rotLeft(array, rotationNumber) {
+
+//     if (rotationNumber >= 1) {
+        
+//         let firstValue = array[0];
+        
+//         array = array.splice(1,array.length - 1);
+//         array = [...array, firstValue];
+        
+//        return rotLeft(array, rotationNumber - 1);
+//     }
+    
+//     return array
+// }
 
 console.log(rotLeft([1, 2, 3, 4, 5], 4));
 //              1 2 3 4 5
