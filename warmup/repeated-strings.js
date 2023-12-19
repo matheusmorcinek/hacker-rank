@@ -5,7 +5,7 @@
 
 //aba 10 = 7
 
-function repeatedString(input, lettersCount) {
+function repeatedString(word, lettersCount) {
 
     if(word === 'a') {
         return lettersCount;
@@ -18,9 +18,9 @@ function repeatedString(input, lettersCount) {
     return result;
 }
 
-// const word = 'babbaabbabaababaaabbbbbbbababbbabbbababaabbbbaaaaabbaababaaabaabbabababaabaabbbababaabbabbbababbaabb';
+ const word = 'babbaabbabaababaaabbbbbbbababbbabbbababaabbbbaaaaabbaababaaabaabbabababaabaabbbababaabbabbbababbaabb';
 // a 46 
-// const letters = '860622337747';
+const letters = '860622337747';
 //395886275361
 
 //395886275363,62
